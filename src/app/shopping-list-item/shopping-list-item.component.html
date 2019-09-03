@@ -3,4 +3,5 @@
   <h3 [title]="item.name" [routerLink]="['/item', id]">{{ id }}</h3>
   <p>{{ item.cost }}</p>
   <button (click)="onNameClick(id)">detail</button>
+  <button (click)="onBuy(item.name)">buy</button>
 </div>

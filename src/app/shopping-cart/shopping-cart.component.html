@@ -1,1 +1,7 @@
-<p>shopping-cart works!</p>
+<div>
+  <a routerLink="/list">list</a>
+</div>
+<div *ngFor="let item of list">
+  <h2>{{ item.name }}</h2>
+  <p>{{ item.count }}</p>
+</div>
