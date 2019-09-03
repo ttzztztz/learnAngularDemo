@@ -1,0 +1,6 @@
+<div>
+  <h1>{{ item.name }}</h1>
+  <h3 [title]="item.name" [routerLink]="['/item', id]">{{ id }}</h3>
+  <p>{{ item.cost }}</p>
+  <button (click)="onNameClick(id)">detail</button>
+</div>
