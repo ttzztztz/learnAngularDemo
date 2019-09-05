@@ -1,0 +1,39 @@
+<div>
+  <input type="text" [formControl]="name" />
+  <button (click)="buttonClick()">heihei</button>
+</div>
+
+<div>
+  <form [formGroup]="profileForm">
+    <label>
+      mobile:
+      <input type="text" formControlName="mobile" #mobile />
+    </label>
+
+    <h2>
+      {{ mobile.value }}
+    </h2>
+
+    <label>
+      address:
+      <input type="text" formControlName="address" />
+    </label>
+
+    <div formGroupName="fullName">
+      <label>
+        first name:
+        <input type="text" formControlName="firstName" />
+      </label>
+
+      <label>
+        last name:
+        <input type="text" formControlName="lastName" />
+      </label>
+    </div>
+  </form>
+
+  <input type="text" [(ngModel)]="qq" />
+
+  <h1>{{ qq }}</h1>
+  <h1>{{ name.value }}</h1>
+</div>
